@@ -1,0 +1,40 @@
+/*
+#4b2c35
+#f7d5dc
+*/
+html,body{
+    padding: 0;
+    margin: 0;
+    background-color: #4b2c35;
+}
+:root{
+    --main-width:250%;
+}
+.container{
+    display: flex;
+    padding: 15px 15px 15px 30px;
+    height: 100vh;
+}
+.search{
+    background-color: #f7d5dc;
+    width:calc(var(--main-width)/3);
+    border-radius: 10px;
+    border-color:rgb(94, 75, 51);
+    padding: 10px;
+    height: 30px;
+    transition: 0.3s ease;
+    
+
+}
+
+.search:hover{
+    width:calc(var(--main-width));
+    border-color: #f7d5dc;
+    box-shadow: 0 0 15px #f7d5dc,
+                0 0 15px #f7d5dc,
+                0 0 15px #f7d5dc;
+}
+
+.search:hover::placeholder{
+    color: transparent;
+}
