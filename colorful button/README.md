@@ -1,1 +1,1 @@
-![project overview](Screenshot 2025-09-28 212452.png)
+![project overview](Screenshot%202025-09-28%20212452.png)
