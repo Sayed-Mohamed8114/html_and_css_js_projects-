@@ -1,0 +1,60 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(35, 34, 34);
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.button-border{
+    padding: 2px;
+    /*making the  colors like the rainbow*/
+    background: linear-gradient(
+        115deg,
+        lightblue,
+        blue,
+        purple,
+        pink
+      );
+      border-radius: 5px;
+}
+
+/*another way to achieve border shape like the above
+ignore the button-border and in the button class add
+border-image: gave it the same values as the background in .button-border
+border-image-slice:1;
+*/
+
+
+
+.button {
+    border:none;
+    background:rgb(23, 21, 21);
+    color: white;
+    padding: 1em 1.5em; 
+    letter-spacing: -1me;
+    font-size: large;
+}
+
+.button-border:hover{
+    background: linear-gradient(
+        90deg,
+        pink,
+        purple,
+        blue,
+        lightblue
+      );
+}
+
+.button:hover{
+    color:lightblue;
+    padding: 1.1em 1.6em; /*making the box growth when we hover on it */
+}
+
