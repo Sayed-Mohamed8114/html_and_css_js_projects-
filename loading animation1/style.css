@@ -1,0 +1,52 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    height: 100%; /*full height*/
+}
+
+body{
+    display: flex;
+    justify-content: center; /*horizontal center*/
+    align-items: center;   /*vertical center*/
+    height: 100vh; 
+}
+
+.container{
+    display: flex;
+    gap:10px; /*space between balls*/
+}
+
+.container .ball{
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    background-color: black;
+    animation: bounce 0.7s infinite alternate;
+
+}
+
+.container .ball:nth-child(1){
+    animation-delay: 0s;
+}
+.container .ball:nth-child(2){
+    animation-delay: 0.2s;
+}
+.container .ball:nth-child(3){
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+        opacity: 0.5; /*to make it change the colors when it is move */
+        /*if you want your ball to change the size of it*/
+        /* height: 30px;
+        width: 30px; */
+    }
+
+    to{
+        transform: translateY(-20px);
+        opicity:1;
+    }
+}
