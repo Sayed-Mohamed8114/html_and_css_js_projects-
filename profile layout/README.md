@@ -1,2 +1,2 @@
 # here is an overview of the program 
-<img src="profile.jpg" alt="Description" width="200" height="150">
+<img src="overview.png" alt="Description" width="200" height="150">
