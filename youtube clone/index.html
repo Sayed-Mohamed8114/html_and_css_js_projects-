@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--this is a library from google that conten the icon that is created by google and we call it -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <base href="images/" />
+    <title>Youtube</title>
+  </head>
+  <body>
+    <header>
+      <div class="left-section">
+        <!--this to call the menu icon from the library-->
+        <i class="material-icons">menu</i>
+        <!--this is to make the youtube logo in fornt of us-->
+        <img src="youtube-logo.png" alt="" />
+      </div>
+
+      <div class="middle-section">
+        <!--now we will make the search box and the mic and the search icon-->
+        <form>
+          <!--to make the search box and placeholder for the word that appear before you write any thing-->
+          <input type="text" placeholder="search" />
+          <!--we put it in button to be a button like the real one -->
+          <button><i class="material-icons">search</i></button>
+        </form>
+        <!--get it out to not be connected to the form that we created to search-->
+        <i class="material-icons mic">mic</i>
+      </div>
+
+      <div class="right-section">
+        <!--we will put it in the link attribute because it move us to new section-->
+        <a href=""><i class="material-icons">video_call</i></a>
+        <a href=""><i class="material-icons">apps</i></a>
+        <a href=""><i class="material-icons">notifications</i></a>
+        <a href=""><i class="material-icons">account_circle</i></a>
+      </div>
+    </header>
+
+    <div class="content-area">
+      <!--the aside will contain the elements on the left of our youtube-->
+      <aside>
+        <nav>
+          <a href="" class="nav-link active">
+            <i class="material-icons">home</i>
+            <span id="active-span">Home</span>
+          </a>
+          <a href="" class="nav-link">
+            <i class="material-icons-outlined">explore</i>
+            <!--the outlined make the styling in our icon like disapled-->
+            <span>Explore</span>
+          </a>
+          <a href="" class="nav-link">
+            <i class="material-icons-outlined">subscriptions</i>
+            <span>Subscriptions</span>
+          </a>
+          <a href="" class="nav-link">
+            <i class="material-icons-outlined">ondemand_video</i>
+            <span>Originals</span>
+          </a>
+          <a href="" class="nav-link">
+            <i class="material-icons">play_circle_outline</i>
+            <span>Youtube musics</span>
+          </a>
+          <a href="" class="nav-link">
+            <i class="material-icons-outlined">smart_display</i>
+            <span>Shorts</span>
+          </a>
+          <hr />
+          <a href="" class="nav-link">
+            <i class="material-icons-outlined">video_library</i>
+            <span>Library</span>
+          </a>
+          <a href="" class="nav-link">
+            <i class="material-icons-outlined">history</i>
+            <span>History</span>
+          </a>
+          <a href="" class="nav-link">
+            <i class="material-icons-outlined">thumb_up</i>
+            <span>Liked_Videos</span>
+          </a>
+          <a href="" class="nav-link">
+            <i class="material-icons-outlined">playlist_play</i>
+            <span>Playlists</span>
+          </a>
+          <a href="" class="nav-link">
+            <i class="material-icons-outlined">watch_later</i>
+            <span>watch Later</span>
+          </a>
+          <hr />
+          <p>Subscriptions</p>
+          <a href="" class="nav-link">
+            <img class="channel-imgs" src="profile.jpg" alt="" />
+            <span>Sayed_Mohamed</span>
+          </a>
+          <a href="" class="nav-link">
+            <img
+              alt=""
+              class="channel-imgs"
+              src="WhatsApp Image 2025-07-11 at 23.19.26_2669d00e.jpg"
+            />
+            <span>Amr_Mohamed</span>
+          </a>
+          <a href="" class="nav-link">
+            <img
+              alt=""
+              class="channel-imgs"
+              src="WhatsApp Image 2025-07-11 at 23.19.26_fd43701d.jpg"
+            />
+            <span>Ziad_Mohamed</span>
+          </a>
+        </nav>
+      </aside>
+      <!--after the aside we will go down in the and create a new div like a main to build the main view of the youtube -->
+      <main>
+        <div class="videos-container">
+          <div class="video">
+            <div class="thumbnail">
+              <img src="video1.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img
+                  alt=""
+                  src="WhatsApp Image 2025-07-11 at 23.19.26_2669d00e.jpg"
+                />
+              </div>
+              <div class="tittle">
+                <a href="" class="video-tittle">
+                  How to fight your own depression..if it look like an evil
+                  dragon
+                </a>
+                <a href="" class="video-creator"> Amr_Mohamed </a>
+                <span>5M views <span class="dot">•</span> 3 months ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="video2.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img
+                  alt=""
+                  src="WhatsApp Image 2025-07-11 at 23.19.26_2669d00e.jpg"
+                />
+              </div>
+              <div class="tittle">
+                <a href="" class="video-tittle">
+                  How to fight your own depression..if it look like an evil
+                  dragon with the wisdom of a shark
+                </a>
+                <a href="" class="video-creator"> Amr_Mohamed </a>
+                <span>7M views <span class="dot">•</span> 4 months ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="video3.webp" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img
+                  src="WhatsApp Image 2025-07-11 at 23.19.26_fd43701d.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="tittle">
+                <a href="" class="video-tittle">
+                  learn how to make music like a DJ with RGB lights Part(2)
+                </a>
+                <a href="" class="video-creator"> Ziad_Mohamed </a>
+                <span>10k views <span class="dot">•</span> 1 hour ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="video4.webp" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img
+                  src="WhatsApp Image 2025-07-11 at 23.19.26_fd43701d.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="tittle">
+                <a href="" class="video-tittle">
+                  learn how to make music like a DJ with RGB lights Part(1)
+                </a>
+                <a href="" class="video-creator"> Ziad_Mohamed </a>
+                <span>70k views <span class="dot">•</span> 1 day ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="video5.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="profile.jpg" alt="" />
+              </div>
+              <div class="tittle">
+                <a href="" class="video-tittle">
+                  learn how to secure your own device like a fuckin hacker.
+                </a>
+                <a href="" class="video-creator"> Sayed_Mohamed </a>
+                <span>1M views <span class="dot">•</span> 1 month ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="video6.jpeg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="profile.jpg" alt="" />
+              </div>
+              <div class="tittle">
+                <a href="" class="video-tittle">
+                  All what you need to learn about cloud computing in one video.
+                </a>
+                <a href="" class="video-creator"> Sayed_Mohamed </a>
+                <span>7M views <span class="dot">•</span> 3 month ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="video7.jpeg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img
+                  src="WhatsApp Image 2025-07-11 at 23.19.26_2669d00e.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="tittle">
+                <a href="" class="video-tittle">
+                  The greathnes of allah and his creators
+                </a>
+                <a href="" class="video-creator"> Amr_Mohamed </a>
+                <span>2M views <span class="dot">•</span> 5 month ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="video9.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="profile.jpg" alt="" />
+              </div>
+              <div class="tittle">
+                <a href="" class="video-tittle">
+                  The beauty of the Information technology (IT) department
+                </a>
+                <a href="" class="video-creator"> Sayed_Mohamed </a>
+                <span>9M views <span class="dot">•</span> 4 month ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="video10.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img
+                  src="WhatsApp Image 2025-07-11 at 23.19.26_2669d00e.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="tittle">
+                <a href="" class="video-tittle">
+                  Let's discover the under water
+                </a>
+                <a href="" class="video-creator"> Amr_Mohamed </a>
+                <span>11M views <span class="dot">•</span> 1 year ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
