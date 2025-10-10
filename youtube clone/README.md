@@ -1,5 +1,5 @@
 <pre>
-  clone for youtube , simple projetc to practise css and html..
+  clone for youtube , simple project to practise css and html..
 
  <bold> here the overview picture about the final result </bold>
 </pre>
