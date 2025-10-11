@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>let's play</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="buttons">
+        <p class="title-inPage">Rock Paper Scissors Game</p>
+        <button  onclick="play('rock')" class="button-img">
+            <img src="images/rock-emoji.png" alt="Rock" width="90" height="90" class="image-btn">
+        </button>
+        <button  onclick="play('paper')" class="button-img">
+            <img src="images/paper-emoji.png" alt="Rock" width="90" height="90" class="image-btn">
+        </button>
+        <button  onclick="play('scissors')" class="button-img">
+            <img src="images/scissors-emoji.png" alt="Rock" width="90" height="90" class="image-btn">
+        </button>
+        <p id="result"></p>
+        
+        <p id="score"></p>
+
+        <button class="reset" onclick="resetscore()" >New Game</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
