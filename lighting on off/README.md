@@ -3,7 +3,7 @@
 ![switch structure](assets/switch_cont.png)
 
 # now here is the over view about the project 
-### when light of 
+### when light off
 ![light off](assets/bulb_off.png)
 
 ### when light on 
