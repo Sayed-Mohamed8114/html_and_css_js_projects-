@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated humburger menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="humburger">
+      <div class="top-bar"></div>
+      <div class="middle-bar"></div>
+      <div class="bottom-bar"></div>
+    </div>
+
+    <script>
+      let isClick = false;
+      let humburger = document.querySelector(".humburger");
+      humburger.addEventListener("click", function () {
+        if (isClick) {
+          humburger.classList.remove("active");
+        } else {
+          humburger.classList.add("active");
+        }
+        // now we need to toggle the click
+        isClick = !isClick;
+      });
+    </script>
+  </body>
+</html>
