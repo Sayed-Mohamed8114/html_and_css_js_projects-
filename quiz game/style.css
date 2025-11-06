@@ -1,0 +1,197 @@
+/*
+#1f2f33
+#a3b4c4
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*change how the browser caculates an element's total width and height
+  ex --> 
+  without this if you set an element to be 100px wide and add 10px padding horizontally
+  the total width will become 120 (100 + 10 padding on every side),
+  but with the box-sizing the padding will be taken from the 100px 
+  (from inside the box will not going and add 10 on every side extra)
+   */
+}
+
+body {
+  background: #a3b4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+/* for the container*/
+.container {
+  background-color: #1f2f33;
+  border-radius: 1rem;
+  color: #a3b4c4;
+  box-shadow: 0px 0px 10px 10px rgba(233, 229, 229, 0.74);
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+/*screens*/
+.screen {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+}
+
+.screen.active {
+  display: block;
+}
+
+/*start screen*/
+#start-screen h1 {
+  color: snow;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+#start-screen p {
+  color: #a3b4c4;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.quiz-header {
+  margin-bottom: 2rem;
+}
+
+#question-text {
+  color: #a3b4c4;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.4rem;
+}
+
+.quiz-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #a3b4c4;
+}
+
+.answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.answer-btn {
+  background-color: darkgray;
+  color: #1f2f33;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+  display: flex;
+  width: 100%;
+}
+
+.answer-btn:hover {
+  background-color: gray;
+  border-color: darkgray;
+}
+
+.answer-btn.correct {
+  background-color: #e6fff0;
+  border-color: #a3f0c4;
+  color: #28a745;
+}
+
+.answer-btn.incorrect {
+  background-color: #fff0f0;
+  border-color: #ffbdbd;
+  color: #dc3545;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #a3b4c4;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.progress {
+  height: 100%;
+  background-color: white;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/*result screen*/
+#result-screen h1 {
+  color: snow;
+  margin-bottom: 30px;
+}
+
+.result-info {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.result-info p {
+  font-size: 1.2rem;
+  color: #a3b4c4;
+  margin-bottom: 1rem;
+}
+
+#result-message {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #a3b4c4;
+}
+
+button {
+  background-color: #a3b4c4;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  color: #1f2f33;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  background-color: #1e434c;
+  color: #a3b4c4;
+}
+
+/* Now the media qeries to make the website more responsive*/
+@media (max-width: 500px) {
+  /*when we hit 500px and below implement the styles below*/
+  .screen {
+    padding: 1rem;
+  }
+  #start-screen h1 {
+    font-size: 2rem;
+  }
+  #question-text {
+    font-size: 1.3rem;
+  }
+  .answer-btn {
+    padding: 12px;
+  }
+  button {
+    padding: 8px;
+    font-size: 1rem;
+  }
+}
+
+/*the minute 38*/
