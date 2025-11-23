@@ -1,0 +1,100 @@
+:root {
+  --slate-teal: #1f2f33;
+  --frost-blue: #a3b4c4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, var(--slate-teal), var(--frost-blue));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: linear-gradient(135deg, var(--frost-blue), var(--slate-teal));
+  border-radius: 24px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px;
+  background-color: var(--frost-blue);
+  border: 4px;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+
+button:hover {
+  background-color: var(--slate-teal);
+  color: white;
+}
+
+#bookmark-list {
+  list-style: none;
+  padding: 0;
+}
+
+#bookmark-list li {
+  background-color: var(--frost-blue);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bookmark-list a {
+  color: var(--slate-teal);
+  text-decoration: none;
+}
+
+#bookmark-list a:hover {
+  color: sienna;
+}
+
+#bookmark-list button {
+  background-color: sienna;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#bookmark-list button:hover {
+  background-color: red;
+}
