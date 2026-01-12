@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background: rgba(10, 10, 0, 0.5);
+  flex-direction: column;
+}
+
+.container {
+  background: snow;
+  color: black;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  gap: 1px;
+}
+
+.score {
+  background: black;
+  width: 400px;
+  height: 50px;
+  color: snow;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.food,
+.snake {
+  width: 100%;
+  height: 100%;
+}
+
+.snake {
+  background-color: brown;
+}
+
+.food {
+  background-color: green;
+  border-radius: 50%;
+}
