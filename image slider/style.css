@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.slider {
+  height: 100vh;
+}
+
+.slide {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 100vh;
+}
+
+.btn {
+  position: absolute;
+  top: 45%;
+  font-size: 4rem;
+  color: whitesmoke;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.prev {
+  left: 2rem;
+}
+
+.next {
+  right: 2rem;
+}
