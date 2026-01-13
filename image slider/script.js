@@ -19,3 +19,5 @@ function prevfun(){
     slides[prevslide].style.display='block';
     currentslide=prevslide;
 }
+
+setInterval(nextfun,1500);
